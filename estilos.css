@@ -1,26 +1,25 @@
-/* body styles */
+
+/* Estilos generales */
 * {
   font-family: 'Roboto', sans-serif;
   color: #006A80;
+  margin: 5px 2px 2px 5px;
 }
+
+/* Fondo del cuerpo */
 body {
   background-color: #FFE6B3;
-
 }
 
-
-/* header styles */
+/* Encabezado */
 header {
   background-color: #C8CBE3;
   color: #fff;
   padding: 10px;
-  text-align: center;
-}
-#fotoperfil {
-  width:100%;
-  height:auto;
-
-  margin-right: 200px;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  border: 2px solid red;
 }
 
 header h1 {
@@ -28,9 +27,9 @@ header h1 {
   font-size: 36px;
   margin-bottom: 0;
   text-align: center;
-
 }
 
+/* Sección */
 section h2 {
   text-decoration: underline;
   font-size: 24px;
@@ -38,47 +37,93 @@ section h2 {
   margin: 10px 2px 5px 10px;
   text-align: center;
 }
-#perfil {
-  text-align: none;
-  padding: 0;
-  margin: 0;
-  background-color: 661100;
+.seccion {
+    height: 100vh;
 }
+/* Imagen de perfil */
+#fotoperfil {
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  border: 2px solid green;
+}
+
+/* Perfil */
+#perfil {
+  padding: 5;
+  background-color: 661100;
+  display: grid;
+  place-items: center;
+  border: 2px solid pink;
+}
+
+/* Visión */
 #vision {
   background-color: 661100;
   padding: 15px 50px 75px;
-  margin: 10px 2px 5px 10px;
+  display: grid;
+  place-items: center;
+  border: 2px solid orangered;
 }
+
+/* Columnas */
+@media (min-width: 40em){
+  .pcolumnas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+}
+
+/* Habilidades */
 #habilidades {
   background-color: 661100;
-
+  display: grid;
+  place-items: center;
+  border: 2px solid skyblue;
 }
-#experiencia{
+
+/* Experiencia */
+#experiencia {
   background-color: 661100;
-
+  display: grid;
+  place-items: center;
+  border: 2px solid gold;  
 }
-#educacion{
+
+/* Educación */
+#educacion {
   background-color: 661100;
-
+  display: grid;
+  place-items: center;
+  border: 2px solid brown;
 }
 
-#contacto{
-  text-align: center;
-  border: 4px groove ;
-  margin: 10px 2px 5px 10px;
-  box-align: center;
+/* Contacto */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 4px groove;
+  padding: 10px;
   font-family: verdana;
-  font-size: 15;
+  font-size: 15px;
 }
-/* footer styles */
+
+/* Ir hacia arriba */
+#irhaciaarriba {
+  text-align: right;
+  font-family: verdana;
+}
+
+/* Pie de página */
 footer {
   background-color: #ddd;
   color: #483;
   text-align: center;
   padding: 10px;
-  font-family: verdana;
-}
-#irhaciaarriba  {
-  text-align: right;
   font-family: verdana;
 }
